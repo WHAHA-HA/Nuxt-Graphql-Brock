@@ -2,7 +2,6 @@
 
 fragment InventoryCategoryFragment on InventoryCategory {
   id
-  itemId
   name
   vending
   glAccount {

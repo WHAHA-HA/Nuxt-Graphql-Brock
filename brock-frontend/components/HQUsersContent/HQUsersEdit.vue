@@ -223,11 +223,19 @@ export default {
         return `${code} — ${name}`
       }
     },
-    setIsAdmin() {
-      this.isAdmin = !this.isAdmin
+    setIsAdmin(isCheck) {
+      if (isCheck) {
+        isCheck.isAdmin = !isCheck.isAdmin
+      } else {
+        this.isAdmin = !this.isAdmin
+      }
     },
-    setIsActive() {
-      this.isActive = !this.isActive
+    setIsActive(isCheck) {
+      if (isCheck) {
+        isCheck.isActive = !isCheck.isActive
+      } else {
+        this.isActive = !this.isActive
+      }
     },
     selectRole(role) {
       this.role = role

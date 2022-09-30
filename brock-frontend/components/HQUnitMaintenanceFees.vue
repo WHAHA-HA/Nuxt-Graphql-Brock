@@ -215,9 +215,6 @@
               :options="glAccounts"
               :selected-item="unitID && unit.regTax"
               select-by="name"
-              select-by-second="itemId"
-              select-by-gl-account="glAccount"
-              input-select
               @input="selectRegTax"
             />
           </template>

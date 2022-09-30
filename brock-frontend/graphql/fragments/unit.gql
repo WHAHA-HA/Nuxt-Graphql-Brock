@@ -51,7 +51,6 @@ fragment UnitFragment on Unit {
     ...GlAccountFragment
     parent {
       id
-      itemId
       name
       glTypeCode {
         id
@@ -60,7 +59,6 @@ fragment UnitFragment on Unit {
     }
     child {
       id
-      itemId
       name
     }
   }

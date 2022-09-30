@@ -20,17 +20,8 @@ export default {
 .input-row {
   display: flex;
 
-  div:not(:first-child) {
-    margin-left: 16px;
-  }
-
-  @media screen and (max-width: $sm) {
-    flex-direction: column;
-
-    div:not(:first-child) {
-      margin-left: 0px !important;
-      margin-top: 16px;
-    }
+  div:first-child {
+    margin-right: 20px;
   }
 }
 </style>

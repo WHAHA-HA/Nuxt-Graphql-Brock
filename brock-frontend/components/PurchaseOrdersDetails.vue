@@ -36,7 +36,6 @@
               :options="vendors"
               :selected-item="getIsEdit ? getVendor : null"
               select-by="name"
-              select-by-second="code"
               @input="selectVendor"
             />
           </template>

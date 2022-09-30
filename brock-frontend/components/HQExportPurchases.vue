@@ -65,8 +65,6 @@
         export purchases
       </DefaultButton>
     </div>
-
-    <a id="export"></a>
   </PageContentWrapper>
 </template>
 
@@ -184,12 +182,8 @@ export default {
         true
       )
 
-      
       if (exportData) {
-        const download = document.getElementById('export')
-        download.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(exportData))
-        download.setAttribute('download', 'purchase.txt')
-        download.click()
+        window.open(exportData)
       }
     },
   },

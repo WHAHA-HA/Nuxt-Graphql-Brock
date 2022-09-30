@@ -23,7 +23,6 @@ fragment ExpenseFragment on Expense {
   expenseDate
   glAccount {
     id
-    itemId
     name
   }
   expenseType {
